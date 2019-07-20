@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "正在热映-南充",
+    "usingComponents": {
+        "movies": "../../components/movies/movies"
+    }
+}

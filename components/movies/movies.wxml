@@ -1,0 +1,16 @@
+<view class="movies">
+    <view class="movie" wx:for="{{movies}}" wx:for-item="movie" wx:for-index="idx" wx:key="movie.src">
+        <navigator class="movieLink" target="self" url="{{movie.url}}" open-type="navigate">
+            <image class="movieImg" src="{{movie.src}}"></image>
+        <view class="raitingBox">
+          <text class="raiting">{{ movie.raiting }}</text>
+        </view>
+        </navigator>
+      <text class="movieName">{{movie.name}}</text>
+      <view class="movieTags">
+        <text wx:for="{{movie.decs}}" wx:for-index="idx" wx:for-item="dec" class="tag">
+          {{dec}}
+        </text>
+      </view>
+    </view>
+</view>

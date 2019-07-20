@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "最具口碑",
+    "usingComponents": {
+        "movies": "../../components/movies/movies"
+    }
+}

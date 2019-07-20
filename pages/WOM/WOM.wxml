@@ -1,0 +1,5 @@
+<view id="WOM">
+    <view class="main">
+        <movies movies="{{movies}}"></movies>
+    </view>
+</view>

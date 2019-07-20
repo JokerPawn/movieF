@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "即将上映",
+    "usingComponents": {
+        "movies": "../../components/movies/movies"
+    }
+}

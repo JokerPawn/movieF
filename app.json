@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/hotShow/hotShow",
+        "pages/waitShow/waitShow",
+        "pages/WOM/WOM",
+        "pages/profile/profile"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#48a76d",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#989898",
+        "selectedColor": "#48A76D",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "position": "bottom",
+        "list": [{
+                "pagePath": "pages/hotShow/hotShow",
+                "text": "热映",
+                "iconPath": "images/hotShow.jpg",
+                "selectedIconPath": "images/ac_hotShow.jpg"
+            },
+            {
+                "pagePath": "pages/waitShow/waitShow",
+                "text": "待映",
+                "iconPath": "images/waitShow.jpg",
+                "selectedIconPath": "images/ac_waitShow.jpg"
+            },
+            {
+                "pagePath": "pages/WOM/WOM",
+                "text": "口碑",
+                "iconPath": "images/WOM.jpg",
+                "selectedIconPath": "images/ac_WOM.jpg"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "我的",
+                "iconPath": "images/profile.jpg",
+                "selectedIconPath": "images/ac_profile.jpg"
+            }
+        ]
+    },
+
+    "sitemapLocation": "sitemap.json"
+}

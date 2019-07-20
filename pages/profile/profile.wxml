@@ -1,0 +1,27 @@
+<view id="profile">
+    <view class="main">
+      <view class="info" >
+        <view>
+            <navigator class="changeAvatar" target="self" url="" open-type="navigate">
+                <image class="avatar" src="{{info.avatar}}"></image>
+            </navigator>
+        </view>
+        <view class="nicknameAndSex">
+          <text class="nickname" space="nbsp" decode="true">{{ info.nickname }} &nbsp; </text>
+          <text class="sex">{{ info.sex }}</text>
+        </view>
+        <text class="address">{{ info.address }}</text>
+        <navigator class="changeBgi" target="self" url="" open-type="navigate">
+            <image class="changeIcon" src="../../images/衣服.png"></image>
+        </navigator>
+      </view>
+      <view class="grids">
+        <view class="grid" wx:for="{{grids}}" wx:key="grid.text" wx:for-index="idx" wx:for-item="grid">
+            <navigator class="gridLink" target="self" url="{{grid.url}}" open-type="navigate">
+                <image class="gridImg" src="{{grid.img}}"></image>
+            </navigator>
+          <text class="gridText">{{ grid.text }}</text>
+        </view>
+      </view>
+    </view>
+</view>

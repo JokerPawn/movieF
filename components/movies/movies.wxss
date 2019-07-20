@@ -1,0 +1,77 @@
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.movies .movie {
+  width: 9.28rem;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  margin-top: 0.42666667rem;
+}
+.movies .movie .movieLink {
+  width: 100%;
+  height: 13.54666667rem;
+  display: block;
+  position: relative;
+}
+.movies .movie .movieLink .movieImg {
+  width: 100%;
+  height: 13.54666667rem;
+}
+.movies .movie .movieLink .raitingBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+.movies .movie .movieLink .raitingBox .raiting {
+  display: inline-block;
+  height: 100%;
+  font-size: 0.64rem;
+  line-height: 1.33333333rem;
+  color: #fff;
+  padding-right: 0.53333333rem;
+}
+.movies .movie .movieName {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.28rem;
+  font-size: 0.74666667rem;
+  line-height: 0.74666667rem;
+  padding: 0.26666667rem 0 0.26666667rem 0.53333333rem;
+}
+.movies .movie .movieTags {
+  width: 100%;
+  height: 1.70666667rem;
+  padding: 0.26666667rem 0;
+  font-size: 0.0162963rem;
+  line-height: 1.17333333rem;
+  display: flex;
+  align-items: center;
+}
+.movies .movie .movieTags .tag {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 1.17333333rem;
+  font-size: 0.64rem;
+  line-height: 0;
+  color: #a3a3a3;
+  margin-left: 0.21333333rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  font-family: monospace;
+  text-align: center;
+  padding: 0.21333333rem;
+}
+.movies .movie .movieTags .tag:nth-of-type(1) {
+  margin-left: 0.53333333rem;
+}

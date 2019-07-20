@@ -1,0 +1,18 @@
+<view id='hotShow'>
+    <view class="searchBox">
+        <view class="searchBox_inner">
+            <icon class="searchIcon" type="search" size="40rpx" color=""></icon>
+            <input type="text" placeholder="请输入关键词搜索" placeholder-style="color: #ccc" confirm-type="search" class="search" placeholder-class="placeholder"/>  
+        </view>
+    </view>
+    <swiper class="swipe" indicator-dots="true" indicator-color="rgba(122,133,129,.3)" autoplay="true" 
+        current="0"  interval="2000" duration="1000" circular="false"  
+    previous-margin="false" next-margin="0px" display-multiple-items="1" skip-hidden-item-layout="false">
+        <swiper-item class="swipeItem"  wx:for="{{imgs}}" wx:for-index="idx" wx:for-item="img" wx:key="img.src" item-id="{{img.src}}">
+            <navigator class="recLink" target="self" url="{{img.url}}" hover-class="navigator-hover" open-type="navigate">
+                <image class="recImg" src="{{img.src}}"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>    
+    <movies movies="{{movies}}"></movies>
+</view>

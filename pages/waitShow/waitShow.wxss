@@ -1,0 +1,6 @@
+#waitShow {
+  width: 100%;
+}
+#waitShow .main {
+  background-color: #f5f5f5;
+}
